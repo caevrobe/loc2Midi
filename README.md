@@ -1,4 +1,6 @@
-[Visualization of coordinate math](https://www.desmos.com/calculator/qzcw2goadz)
+[Visualization of coordinate math](https://www.desmos.com/calculator/qzcw2goadz)<br><br>
+[Video demonstration of project](https://youtu.be/XlTWXNL60yQ)
+<br><br>
 
 This project uses realtime location data to control audio effects plugins in order to simulate movement throughout a virtual soundscape.
 Both a "map" of sounds in [-1, 1] coordinate space and the corner points of the listening space that the user sets are used to map out virtual sounds in real space. As the listener moves through the area they defined, each different audio source in the soundscape will move around the stereo field.
@@ -9,13 +11,13 @@ In place of real location data, I set up a graph acting as an X/Y controller whi
 
 
 ### Requirements:
- - [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)
+ - [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)<br>
    used to create a virtual MIDI port need to send created MIDI messages to DAW. Another virtual MIDI program may also work.
- - [midicat](https://github.com/gomidi/midicat)
+ - [midicat](https://github.com/gomidi/midicat)<br>
    used to send MIDI messages from Go. Midicat.exe must be placed in the same directory as loc2Midi.exe
- - [Reaper](http://reaper.fm/)
+ - [Reaper](http://reaper.fm/)<br>
    used for sound playback and manipulation.
- - [ATK for Reaper](https://www.ambisonictoolkit.net/documentation/reaper/)
+ - [ATK for Reaper](https://www.ambisonictoolkit.net/documentation/reaper/)<br>
    used to control spatial characteristics of each audio track.
 
 ### To run:
